@@ -1,0 +1,10 @@
+.currency {
+  width: 280px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.currency:first-child {
+  margin-bottom: 25px;
+}

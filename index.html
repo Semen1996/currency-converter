@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/index.css">
+    <title>Конвертер валют</title>
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Конвертер валют</h1>
+    <div class="courses">
+      <div class="course-item">
+        <h3 class="course-item__title">Курс USD</h3>
+        <p id="course-USD" class="course-item__value">--.--</p>
+      </div>
+      <div class="course-item">
+        <h3 class="course-item__title">Курс EUR</h3>
+        <p id="course-EUR" class="course-item__value">--.--</p>
+      </div>
+      <div class="course-item">
+        <h3 class="course-item__title">Курс GBP</h3>
+        <p id="course-GBP" class="course-item__value">--.--</p>
+      </div>
+    </div>
+    <div class="block-currency">
+      <div id="input-currency" class="currency">
+        <input class="currency__input" type="number" value="1">
+        <select class="currency__list">
+          <option value='USD' selected>USD</option>
+          <option value='EUR'>EUR</option>
+          <option value='CHF'>CHF</option>
+          <option value='CZK'>CZK</option>
+          <option value='DKK'>DKK</option>
+          <option value='GBP'>GBP</option>
+          <option value='INR'>INR</option>
+          <option value='JPY'>JPY</option>
+          <option value='KRW'>KRW</option>
+          <option value='NOK'>NOK</option>
+          <option value='PLN'>PLN</option>
+          <option value='SEK'>SEK</option>
+          <option value='SGD'>SGD</option>
+          <option value='TRY'>TRY</option>
+          <option value='UAH'>UAH</option>
+          <option value='SGD'>SGD</option>
+        </select>
+      </div>
+      <div id="output-currency" class="currency">
+        <p class="currency__input">1</p>
+        <select class="currency__list" disabled>
+          <option value='RUB'>RUB</option>
+        </select>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__author">&copy; 2022. Семён Толстогузов</p>
+    <p class="footer__author">semen.tolstoguzov@mail.ru</p>
+  </footer>
+  <script src="./pages/index.js"></script>
+</body>
+</html>
